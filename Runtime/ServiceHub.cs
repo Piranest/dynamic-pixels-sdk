@@ -10,7 +10,6 @@ using DynamicPixels.GameService.Utils.WebsocketClient;
 
 namespace DynamicPixels.GameService
 {
-
     public static class ServiceHub
     {
         // configs
@@ -27,7 +26,7 @@ namespace DynamicPixels.GameService
 
         // transports
         // TODO: Realtime
-        internal static ISocketAgent Agent = new WebSocketAgent();
+        internal static IWebSocketService Agent = new WebSocketService();
 
         // services
         public static ISynchronise Synchronise;
@@ -37,7 +36,7 @@ namespace DynamicPixels.GameService
         public static Services.Table.Services Services;
 
         public static void Configure(string clientId, string clientSecret, SystemInfo systemInfo, bool debugMode,
-            bool developmentMode, bool verboseMode)
+            bool developmentMode, bool verboseMode, short reconnectDelay, short maxAttempts)
         {
             if (IsAvailable)
                 LogHelper.LogException<DynamicPixelsException>(
@@ -46,6 +45,11 @@ namespace DynamicPixels.GameService
                     DebugLocation.All,
                     "Configure");
 
+            Agent.Config(new WebSocketConfiguration()
+            {
+                WebSocketUrl = "wss://ws-europe.dynamicpixels.dev/ws", MaxReconnectAttempts = maxAttempts,
+                ReconnectDelay = reconnectDelay, PingInterval = 10
+            });
             ClientId = clientId;
             ClientSecret = clientSecret;
             DebugMode = debugMode;
@@ -54,7 +58,7 @@ namespace DynamicPixels.GameService
             SystemInfo = systemInfo;
 
             Authentication = new AuthenticationService();
-            Table = new TableService(Agent);
+            Table = new TableService();
             Storage = new StorageService();
             Synchronise = new SynchroniseService();
             Services = new Services.Table.Services(Agent);
@@ -68,6 +72,7 @@ namespace DynamicPixels.GameService
         public static void Dispose()
         {
             Authentication.Logout();
+            Agent.Dispose();
         }
 
         public static string Version()

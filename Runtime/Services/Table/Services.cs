@@ -1,3 +1,4 @@
+using adapters.services.table.services;
 using DynamicPixels.GameService.Services.Achievement;
 using DynamicPixels.GameService.Services.Chat;
 using DynamicPixels.GameService.Services.Device;
@@ -14,11 +15,11 @@ namespace DynamicPixels.GameService.Services.Table
 
     public class Services
     {
-        public Services(ISocketAgent agent)
+        public Services(IWebSocketService agent)
         {
             Leaderboard = new LeaderboardService();
             Achievement = new AchievementService();
-            //Chats = new ChatService();
+            Chats = new ChatService(agent);
             Friendship = new FriendshipService();
             Party = new PartyService();
             Users = new UserService();
