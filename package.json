@@ -1,0 +1,32 @@
+{
+    "name": "com.dynamicpixels.sdk",
+    "version": "1.0.0",
+    "displayName": "DynamicPixels Unity SDk",
+    "description": "Connect your game to DynamicPixels and implement best online features easily",
+    "unity": "2019.1",
+    "unityRelease": "0b5",
+    "documentationUrl": "https://docs.dynamicpixels.dev",
+    "changelogUrl": "https://dynamicpixels.dev/changelog.html",
+    "licensesUrl": "https://dynamicpixels.dev/licensing.html",
+    "dependencies": {
+
+    },
+    "samples": [
+        {
+            "displayName": "Toolkit",
+            "description": "Contains sample scenes to test and call functions",
+            "path": "Samples/toolkit"
+        }
+    ],
+    "keywords": [
+        "online",
+        "leaderboard",
+        "multipleyer",
+        "cloud"
+    ],
+    "author": {
+        "name": "DynamicPixels",
+        "email": "unity@dynamicpixels.dev",
+        "url": "dynamicpixels.dev"
+    }
+}
