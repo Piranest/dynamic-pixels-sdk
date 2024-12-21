@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: dccd139715c668f0d86673c576e51ba0
+=======
+guid: fd61c10f314e74a559f2df7bbe9b92bf
+>>>>>>> f40eb7e (update gitignore file)
 TextScriptImporter:
   externalObjects: {}
   userData: 

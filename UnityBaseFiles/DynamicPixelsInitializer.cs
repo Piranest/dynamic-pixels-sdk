@@ -30,10 +30,17 @@ namespace DynamicPixelsInitializer
             DynamicPixelsDispose();
         }
         
+<<<<<<< HEAD
         private void Awake()
         {
             DontDestroyOnLoad(this);
         }
+=======
+        //private void Awake()
+        //{
+        //    DontDestroyOnLoad(this);
+        //}
+>>>>>>> f40eb7e (update gitignore file)
 
         public void OnEnable()
         {

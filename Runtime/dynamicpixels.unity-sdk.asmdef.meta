@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: f61f4303d05994d2fbcb21c97c30863b
+=======
+guid: e6cb8a678b0884b8f8aff963004e2086
+>>>>>>> f40eb7e (update gitignore file)
 AssemblyDefinitionImporter:
   externalObjects: {}
   userData: 

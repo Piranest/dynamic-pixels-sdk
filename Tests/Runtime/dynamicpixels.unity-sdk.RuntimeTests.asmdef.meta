@@ -1,3 +1,13 @@
+<<<<<<< HEAD
 ﻿fileFormatVersion: 2
 guid: 1df42a6f273247398d67c70ca0f685b8
 timeCreated: 1683305983
+=======
+fileFormatVersion: 2
+guid: 93417e38bf7214737bbd6b46cef6f776
+AssemblyDefinitionImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+>>>>>>> f40eb7e (update gitignore file)

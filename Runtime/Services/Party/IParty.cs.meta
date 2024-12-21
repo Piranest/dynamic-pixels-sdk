@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 60ea91322d860854881183e9974a3659
+=======
+guid: c3348f5ca8ce64281b9a4c4de2a6d74e
+>>>>>>> f40eb7e (update gitignore file)
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2

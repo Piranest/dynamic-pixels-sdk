@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 71e9d0dba3648ac4080732b3c290c935
+=======
+guid: d23f8875992a7446291144ffbb047e5d
+>>>>>>> f40eb7e (update gitignore file)
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
