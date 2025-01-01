@@ -31,16 +31,22 @@ namespace DynamicPixelsInitializer
         }
         
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> beef184 (Update DynamicPixelsInitializer.cs)
         private void Awake()
         {
             DontDestroyOnLoad(this);
         }
+<<<<<<< HEAD
 =======
         //private void Awake()
         //{
         //    DontDestroyOnLoad(this);
         //}
 >>>>>>> f40eb7e (update gitignore file)
+=======
+>>>>>>> beef184 (Update DynamicPixelsInitializer.cs)
 
         public void OnEnable()
         {
