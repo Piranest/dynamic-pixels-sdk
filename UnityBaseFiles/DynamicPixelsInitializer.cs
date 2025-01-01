@@ -30,10 +30,10 @@ namespace DynamicPixelsInitializer
             DynamicPixelsDispose();
         }
         
-        //private void Awake()
-        //{
-        //    DontDestroyOnLoad(this);
-        //}
+        private void Awake()
+        {
+            DontDestroyOnLoad(this);
+        }
 
         public void OnEnable()
         {
